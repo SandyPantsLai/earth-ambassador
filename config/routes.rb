@@ -2,7 +2,7 @@ Rails.application.routes.draw do
 
   root 'pictures#index'
   get 'pictures' => 'pictures#index'
-  get 'pictures/:id' => 'pictures#show'
+  get 'pictures/:id' => 'pictures#show', as: 'picture'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
