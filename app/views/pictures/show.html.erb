@@ -1,5 +1,5 @@
 <h1>Pictures#show</h1>
-<%= link_to "Back to Pictures", pictures_url %>
+<%= link_to "Back to Pictures", pictures_url %> | <%= link_to "Edit", edit_picture_path(@picture) %>
 <p><%= @picture.title %>, <%= @picture.artist %></p>
 <%= image_tag @picture.url %>
 <p>Find me in app/views/pictures/show.html.erb</p>
